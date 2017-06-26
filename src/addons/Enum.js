@@ -1,0 +1,34 @@
+let Enum = {
+    ELoginType:{
+        LOGIN_INVALID:0,
+        LOGIN_WITH_PWD:1,
+        LOGIN_WITH_SMS:2,
+        LOGIN_WITH_KILL_PROCESS:4,
+        LOGIN_WITH_BACK_GROUND:4,
+        LOGIN_WITH_SWITCH_NETWORK:5
+    },
+    EAccessType:{
+        CUSTOMERWEB:0,
+        CUSTOMERAPP:1,
+        CUSTOMERWEBCHAT:2,
+        CUSTOMERALL:3
+    },
+    EClientType:{
+        UNKNOWN:0,
+        IOS:1,
+        ANDROID:2,
+        WEB:3,
+        FINDALL:4
+    },
+    EGatewaySettingMode:{
+        SET_INVALID:0,
+        SET_ALL:1,
+        SET_SPECIAL:2
+    },
+    EAdminType:{
+        ADMIN_INVALID:0,
+        TYPE_SUPER_ADMIN:1,
+        TYPE_GENERAL_ADMIN:2
+    }
+};
+export default Enum;

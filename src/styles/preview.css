@@ -1,0 +1,392 @@
+/* Base Application Styles */
+html,
+body,
+#app,
+#all-back,
+#left-back,
+#top-back {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#all-back {
+    height: 524px;
+    width: 1000px;
+    left: 50%;
+    top: 50%;
+    margin-top: -262px;
+    margin-left: -500px;
+    position: absolute;
+}
+
+#left-back {
+    min-height: 500px;
+    min-width: 720px;
+}
+
+#top-back {
+    min-height: 524px;
+    min-width: 1000px;
+}
+
+#login-back {
+    left: 560px;
+    top: 50%;
+    margin-top: -225px;
+    width: 320px;
+    height: 450px;
+    position: absolute;
+    overflow: hidden;
+    background: inherit; 
+    -webkit-filter: blur(10px); 
+    -moz-filter: blur(10px); 
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    filter: progid:dximagetransform.microsoft.blur(pixelradius=10, makeshadow=false);
+    background-position: -560px -37px;
+}
+
+_:-ms-lang(x),
+#login-back {
+  background:white;
+  opacity: 0.75;
+}
+
+#top-back #login-back {
+    left: 50%;
+    top: 50%;
+    margin-top: -140px;
+    margin-left: -250px;
+    width: 500px;
+    height: 280px;
+    position: absolute;
+    overflow: hidden;
+    background: inherit;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    filter: progid:dximagetransform.microsoft.blur(pixelradius=10, makeshadow=false);
+    background-position: center;
+}
+
+_:-ms-lang(x),
+#top-back #login-back {
+  background:white;
+  opacity: 0.75;
+}
+
+#login {
+    width: 320px;
+    height: 450px;
+    top:50%;
+    left: 560px;
+    margin-top: -225px;
+    position: absolute;
+}
+
+#left-back #login{
+    width: 320px;
+    height: 450px;
+    top:50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -160px;
+    position: absolute;
+}
+
+#all-back #login {
+    border: 1px solid #595350;
+    border-radius: 5px;
+}
+
+_:-ms-lang(x),
+#all-back #login {
+  border: none;
+}
+
+#login_mode2 {
+    width: 500px;
+    height: 280px;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -140px;
+    position: absolute;
+    border: 1px solid #595350;
+    border-radius: 5px;
+}
+
+_:-ms-lang(x),
+#login_mode2 {
+  border: none;
+}
+
+#login_title {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff6b2b;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#login_mode2 #login_title {
+    width: 100%;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ff6b2b;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.verify_title {
+    margin-left: 50px;
+    color: #ff6b2b;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.input_line {
+    height: 40px;
+}
+
+#login_mode2 .verify_title {
+    display: inline-block;
+    margin-left: 60px;
+    color: #ff6b2b;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.verify_input {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 40px;
+    height: 38px;
+    width: 240px;
+    outline: none;
+    border-radius: 40px;
+    border: 1px solid #eee;
+    padding-left: 20px;
+    line-height: 40px;
+    background-color: #595350;
+    color: #fff;
+}
+
+#login_mode2 .verify_input {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 10px;
+    height: 38px;
+    width: 240px;
+    outline: none;
+    border-radius: 40px;
+    border: 1px solid #eee;
+    padding-left: 20px;
+    line-height: 40px;
+    background-color: #595350;
+    color: #fff;
+}
+
+.verify_input_error {
+    font-size: 18px;
+    margin-left: 40px;
+    height: 38px;
+    width: 240px;
+    outline: none;
+    border-radius: 40px;
+    border: 1px solid #eee;
+    padding-left: 20px;
+    line-height: 39px;
+    background-color: #595350;
+    color: #fff;
+    border: 1px solid #ff3535;
+}
+
+#login_mode2 .verify_input_error {
+    font-size: 18px;
+    margin-left: 10px;
+    height: 38px;
+    width: 240px;
+    outline: none;
+    border-radius: 40px;
+    border: 1px solid #eee;
+    padding-left: 20px;
+    line-height: 39px;
+    background-color: #595350;
+    color: #fff;
+    border: 1px solid #ff3535;
+}
+
+#verify_tip,
+#verify_tip_countDown {
+    margin-top: 35px;
+    position: absolute;
+    line-height: 25px;
+    width: 90px;
+    height: 25px;
+    cursor: pointer;
+    background-color: #ff6b2b;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    text-align: center;
+    left: 185px;
+}
+
+#login_mode2 #verify_tip,
+#login_mode2 #verify_tip_countDown {
+    position: absolute;
+    margin-top: 8px;
+    line-height: 25px;
+    width: 90px;
+    height: 25px;
+    cursor: pointer;
+    background-color: #ff6b2b;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 25px;
+    text-align: center;
+    left: 272px;
+}
+
+#phone_tip {
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #ff1a2d;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#login_mode2 #phone_tip {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #ff1a2d;
+    margin-left: 132px;
+}
+
+#verifyCode_tip {
+    margin-top: 5px;
+    height: 20px;
+    margin-left: 50px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #ff1a2d;
+}
+
+#login_mode2 #verifyCode_tip {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 20px;
+    margin-left: 132px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #ff1a2d;
+}
+
+#connectButton {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 240px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #ff6b2b;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#login_mode2 #connectButton {
+    width: 240px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #ff6b2b;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 132px;
+    margin-top: 0;
+}
+
+#left-back-container {
+    width: 700px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -225px;
+    border-radius: 5px;
+    border: 1px solid #595350;
+    overflow: hidden;
+}
+
+#left-back-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+#left-back-right {
+    background-color: #f4f4f4;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+#top-back-container {
+    top: 50%;
+    left: 50%;
+    margin-top: -262px;
+    margin-left: -500px;
+    position: absolute;
+    height: 524px;
+    width: 1000px;
+}
+
+#top-back-top {
+    height: 349px;
+    width: 100%;
+    position: relative;
+}
+
+#top-back-bottom {
+    height: 175px;
+    width: 100%;
+}
+
+.top-back-bottom-item {
+    float: left;
+    width: 220px;
+    margin-left: 85px;
+    height: 100%;
+    text-align: center;
+}
+
+.top-back-bottom-item img {
+    display: inline-block;
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.top-back-bottom-item div {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #595350;
+    word-break: break-all;
+}
+

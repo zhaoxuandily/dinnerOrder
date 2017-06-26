@@ -1,0 +1,30 @@
+{
+    "rules": {		
+		"no-mixed-spaces-and-tabs": [2, false],//禁止混用tab和空格
+		"unicode-bom":0,// 要求或禁止 Unicode BOM
+		"indent": [1, 4, { "SwitchCase": 1 }],//缩进风格，4个空格
+		"linebreak-style": [0, "windows"],//关闭换行风格
+		"eol-last": ["error", "always"],// 文件末尾强制换行
+		"max-len": [1, 120], //长度1-120
+		"semi": [2, "always"],// 要求或禁止使用分号而不是 ASI（这个才是控制行尾部分号的，）
+		"curly": [2, "all"],// 强制所有控制语句使用一致的括号风格
+		"no-use-before-define": ["error", { "functions": true, "classes": true }],// 不允许在变量定义之前使用它们
+		"no-unused-vars": [2, {"vars": "all", "args": "after-used"}],// 禁止出现未使用过的变量
+		"no-loop-func": "error",// 禁止在循环中出现 function 声明和表达式
+		"radix": "error",// 强制在parseInt()使用基数参数
+		"quotes": [1, "single", "avoid-escape"],// 强制使用一致的反勾号、双引号或单引号
+		"no-multi-str": "error",// 禁止使用多行字符串，在 JavaScript 中，可以在新行之前使用斜线创建多行字符串
+		"no-new-wrappers":2,// 禁止对 String，Number 和 Boolean 使用 new 操作符
+		"no-new-object": "error",// 禁止使用 Object 的构造函数
+		"no-new-func": 1,// 禁止对 Function 对象使用 new 操作符
+		"no-array-constructor":2,// 禁止使用 Array 构造函数
+		"guard-for-in": 1,// 要求 for-in 循环中有一个 if 语句
+		"no-inner-declarations": [2, "functions"],// 禁止在嵌套的块中出现 function 或 var 声明
+		"no-prototype-builtins":2,// 禁止直接使用 Object.prototypes 的内置属性
+		"no-extend-native": 2,// 禁止扩展原生类型
+		"no-proto":2,// 禁用 __proto__ 属性
+		"no-eval":2,// 禁用 eval()
+		"no-with":2,// 禁用 with 语句
+		"no-delete-var": "error"// 禁止删除变量
+    }
+}

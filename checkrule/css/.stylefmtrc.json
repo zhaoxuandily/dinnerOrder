@@ -1,0 +1,24 @@
+//自动修改配置文件
+{
+    "rules": {
+        "indentation": 4,//缩进4格
+        "string-quotes": "double",//双引号
+        "color-hex-case": "lower",//颜色值用小写
+        "declaration-colon-space-before": "never",
+        "declaration-colon-space-after": "always",// 每个声明语句的“:”之前不加空格，之后加 1 个空格。
+        "block-closing-brace-newline-before": "always",
+        "block-closing-brace-newline-after": "always",//[强制] 右大括号前后换行
+        "block-opening-brace-space-before": "always",//[强制] 右大括号之前1个空格，之后无空格。
+        "block-opening-brace-space-after": "never",
+        "block-opening-brace-newline-after": "always",
+        "selector-list-comma-space-before": "never",
+        "selector-list-comma-newline-before": "never-multi-line",
+        "selector-list-comma-newline-after": "always",
+        "selector-combinator-space-after": "always",
+        "selector-combinator-space-before": "always",
+        "number-leading-zero": "never",
+        "number-no-trailing-zeros": true,
+        "length-zero-no-unit": true,
+        "color-hex-length": "short"
+    }
+}
